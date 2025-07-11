@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sportauto1 - Auto sportive disponibili a benzina, diesel, GPL e metano. Contattaci a Qualiano (NA).">
+    <title>Sportauto1</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <header>
+        <img src="profilo.jpg" alt="Foto auto" class="logo">
+        <h1>Sportauto1</h1>
+    </header>
+
+    <main>
+        <!-- Dropdown carburanti -->
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+                Disponibili <i class="fas fa-caret-down"></i>
+            </button>
+            <div id="dropdownMenu" class="dropdown-content" role="menu">
+                <a href="auto.html" role="menuitem" class="dropdown-link">Tutte le auto</a>
+
+            </div>
+        </div>
+
+        <!-- Contatti -->
+        <div class="buttons">
+            <a href="tel:08119329767" class="button" role="button">📞 Contatti</a>
+        </div>
+
+        <!-- Social -->
+        <div class="social">
+            <a href="https://www.instagram.com/sportautofficial/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="https://www.facebook.com/sportautofficial/?locale=it_IT" target="_blank"><i class="fab fa-facebook"></i> Facebook</a> |
+            <a href="https://www.youtube.com/@keesp_" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+
+        <!-- Mappa -->
+        <div class="location">
+            <p><i class="fas fa-map-marker-alt"></i> Via Santa Maria a Cubito 267, Qualiano (NA)</p>
+            <div class="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2930.891028431426!2d14.144145!3d40.917264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b06e7c39acb6f%3A0x5fa2a302fe70b795!2sVia%20Santa%20Maria%20a%20Cubito%2C%20267%2C%2080019%20Qualiano%20NA!5e0!3m2!1sit!2sit!4v1719840000000"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Form contatti email -->
+        <section class="contact-form">
+            <h2>Contattaci via email</h2>
+            <form action="https://formspree.io/f/xqabvnzq" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
+
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" rows="4" placeholder="Il tuo messaggio" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+
+        <!-- Sezione auto dinamiche -->
+        <section id="autoDisponibili" class="hidden">
+            <h2 class="auto-title">Auto disponibili</h2>
+            <div class="auto-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sportauto1 - Tutti i diritti riservati</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            const menu = document.getElementById("dropdownMenu");
+            menu.classList.toggle("show");
+
+            const button = document.querySelector('.dropdown-button');
+            const expanded = menu.classList.contains("show");
+            button.setAttribute('aria-expanded', expanded);
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.dropdown')) {
+                const menu = document.getElementById("dropdownMenu");
+                if (menu.classList.contains("show")) {
+                    menu.classList.remove("show");
+                    document.querySelector('.dropdown-button').setAttribute('aria-expanded', false);
+                }
+            }
+        }
+
+        function showAuto() {
+            const sezioneAuto = document.getElementById('autoDisponibili');
+            sezioneAuto.classList.remove('hidden');
+
+            const lista = document.querySelector('.auto-list');
+            lista.innerHTML = '';
+
+            const auto = [
+                {
+                    nome: 'Dacia Duster GPL',
+                    img: 'duster1.jpg',
+                    descrizione: 'Anno: 2019\nCarburante: Benzina\nCV: 145\nPrezzo: €13.500'
+                },
+                {
+                    nome: 'Volkswagen Golf GTD',
+                    img: 'https://via.placeholder.com/300x200?text=Golf+GTD',
+                    descrizione: 'Anno: 2018\nCarburante: Diesel\nCV: 184\nPrezzo: €16.900'
+                },
+                {
+                    nome: 'Toyota Yaris Hybrid',
+                    img: 'https://via.placeholder.com/300x200?text=Yaris+Hybrid',
+                    descrizione: 'Anno: 2020\nCarburante: Ibrida\nCV: 100\nPrezzo: €15.300'
+                }
+            ];
+
+            auto.forEach(a => {
+                const card = document.createElement('div');
+                card.className = 'auto-card';
+                card.innerHTML = `
+                    <img src="${a.img}" alt="${a.nome}">
+                    <h3>${a.nome}</h3>
+                    <p>${a.descrizione}</p>
+                `;
+                lista.appendChild(card);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -351,6 +351,45 @@ DOTAZIONE:
 - Idroguida  
 - 4 Vetri elettrici`
   }
+{
+    id: 9,
+    marca: "Toyota",
+    modello: "Yaris",
+    carburante: "Diesel",
+    prezzo: "5,500€",
+    img: [
+      "yarisnew1.jpg",
+      "yarisnew2.jpg",
+      "yarisnew3.jpg",
+      "yarisnew4.jpg",
+      "yarisnew5.jpg",
+      "yarisnew6.jpg",
+      "yarisnew7.jpg",
+      "yarisnew8.jpg"
+    ],
+    descrizione: `Anno di immatricolazione: 2014
+Cilindrata: 1.4
+Alimentazione: Diesel
+Cavalli: 90 CV  
+Potenza: 66 kW  
+Cambio: Manuale  
+Chilometraggio: 190.000 km
+Prezzo: 5,500 EURO (escluso il passaggio)
+
+DOTAZIONE:
+- Chiusure centralizzate  
+- Specchietti elettrici 
+- Doppia chiave
+- Fendinebbia 
+- Climatizzatore 
+- Stereo CD di serie 
+- Computer di bordo  
+- Sedili regolabili  
+- ABS  
+- ESP  
+- Idroguida  
+- 4 Vetri elettrici`
+  }
   // Altre auto possono essere aggiunte qui...
 ];
 

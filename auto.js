@@ -43,49 +43,9 @@ DOTAZIONE:
 - Idroguida  
 - Vetri elettrici`
   },
+
   {
     id: 2,
-    marca: "Hyundai",
-    modello: "i10",
-    carburante: "Benzina/GPL",
-    prezzo: "2.200€",
-    img: [
-      "i10_1.jpg",
-      "i10_2.jpg",
-      "i10_3.jpg",
-      "i10_4.jpg",
-      "i10_5.jpg",
-      "i10_6.jpg",
-      "i10_7.jpg"
-    ],
-    descrizione: `Anno di immatricolazione: 2010  
-Cilindrata: 1.1   
-Cavalli: 65 CV  
-Potenza: 48,5 kW  
-Alimentazione: Benzina/GPL  
-Provenienza: Nord Italia  
-Chilometraggio: 195.000 km  
-Cambio: Manuale  
-Ottima per neopatentati  
-Prezzo: 2.200 EURO (escluso il passaggio)
-
-DOTAZIONE:
-- Chiusure centralizzate  
-- Fendinebbia  
-- Block Shaft  
-- Specchietti elettrici  
-- Climatizzatore  
-- Stereo CD di serie  
-- Computer di bordo  
-- Doppia chiave  
-- Sedili regolabili  
-- ABS  
-- ESP  
-- Idroguida  
-- Vetri elettrici`
-  },
-  {
-    id: 3,
     marca: "Fiat",
     modello: "500 Cabrio",
     carburante: "Benzina/GPL",
@@ -130,7 +90,7 @@ DOTAZIONE:
 - Vetri elettrici`
   },
   {
-    id: 4,
+    id: 3,
     marca: "Renault",
     modello: "Clio",
     carburante: "Benzina",
@@ -171,7 +131,7 @@ DOTAZIONE:
 - Vetri elettrici`
   },
   {
-    id: 5,
+    id: 4,
     marca: "Dacia",
     modello: "Duster",
     carburante: "Diesel",
@@ -212,7 +172,7 @@ DOTAZIONE:
 - Vetri elettrici`
   },
     {
-    id: 6,
+    id: 5,
     marca: "Fiat",
     modello: "Punto Evo",
     carburante: "Benzina/Metano",
@@ -252,7 +212,7 @@ DOTAZIONE:
 - Vetri elettrici`
   },
    {
-    id: 7,
+    id: 6,
     marca: "Citroen",
     modello: "C3 Picasso",
     carburante: "Benzina",
@@ -295,7 +255,7 @@ DOTAZIONE:
 - Vetri elettrici`
   },
   {
-    id: 8,
+    id: 7,
     marca: "Fiat",
     modello: "Panda",
     carburante: "Benzina/Metano",
@@ -334,92 +294,11 @@ DOTAZIONE:
 - Idroguida  
 - Vetri elettrici`
   },
+ 
   {
-    id: 9,
-    marca: "Fiat",
-    modello: "Panda",
-    carburante: "Benzina/Metano",
-    prezzo: "4.550€",
-    img: [
-      "pandamarrone1.jpg",
-      "pandamarrone2.jpg",
-      "pandamarrone3.jpg",
-      "pandamarrone4.jpg",
-      "pandamarrone5.jpg",
-      "pandamarrone6.jpg",
-      "pandamarrone7.jpg",
-      "pandamarrone8.jpg"
-    ],
-    descrizione: `Anno di immatricolazione: 2013
-Cilindrata: 900
-Alimentazione: Benzina/Metano
-Cavalli: 84 CV  
-Potenza: 62 kW  
-Cambio: Manuale  
-Chilometraggio: 160.000 km
-Prezzo: 4.550 EURO (escluso il passaggio)
-
-DOTAZIONE:
-- Chiusure centralizzate  
-- Fendinebbia  
-- Doppia chiave  
-- Specchietti elettrici  
-- Climatizzatore 
-- Stereo CD di serie
-- Computer di bordo  
-- Sedili regolabili  
-- City
-- ABS  
-- ESP  
-- Idroguida  
-- Vetri elettrici`
-  },
+ 
   {
-    id: 10,
-    marca: "Opel",
-    modello: "Zafira 7 posti",
-    carburante: "Benzina/Metano",
-    prezzo: "3.600€",
-    img: [
-      "zafira1.jpg",
-      "zafira2.jpg",
-      "zafira3.jpg",
-      "zafira4.jpg",
-      "zafira5.jpg",
-      "zafira6.jpg",
-      "zafira7.jpg",
-      "zafira8.jpg",
-      "zafira9.jpg"
-    ],
-    descrizione: `Anno di immatricolazione: 2013
-Cilindrata: 1.6
-Alimentazione: Benzina/Metano
-Cavalli: 150 CV  
-Potenza: 110 kW  
-Cambio: Manuale  
-Chilometraggio: 250.000 km
-Prezzo: 3.600 EURO (escluso il passaggio)
-
-DOTAZIONE:
-- Chiusure centralizzate  
-- Fendinebbia  
-- Doppia chiave  
-- Specchietti elettrici  
-- Climatizzatore 
-- Stereo CD di serie
-- Computer di bordo  
-- Sedili regolabili  
-- Sensori di parcheggio posteriori
-- Poggia braccia
-- Cerchi in lega
-- Barre portapacchi
-- ABS  
-- ESP  
-- Idroguida  
-- Vetri elettrici`
-  },
-  {
-    id: 11,
+    id: 8,
     marca: "Opel",
     modello: "Grandland X",
     carburante: "Diesel",
